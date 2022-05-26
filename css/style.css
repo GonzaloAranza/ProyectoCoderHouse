@@ -1,0 +1,21 @@
+body{
+    background-image: url(./image/BG-Portada.jpeg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+     width: 100vh;
+    height: 100vh;
+}
+
+h1{
+    color: #EEF071;
+    text-align: center;
+}
+
+a{
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #289E42;
+    margin: 5px;
+  }
