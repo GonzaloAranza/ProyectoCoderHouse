@@ -19,3 +19,8 @@ a{
     background-color: #289E42;
     margin: 5px;
   }
+
+  #texto{
+      color: white;
+      text-align: center;
+  }
