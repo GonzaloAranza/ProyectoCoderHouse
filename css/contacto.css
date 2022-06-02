@@ -15,7 +15,8 @@
 li{
     list-style: none;
     display: inline;
-  
+    float: right;
+    margin: 0 10px;
 }
 
 header{
@@ -43,7 +44,8 @@ input[type=text] , textarea{
     margin:10px 0;
     resize: none;
     border-radius: 10px;
-    border: 1px;
- 
+    border: 1px; 
 }
+
+
 
