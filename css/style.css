@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #EEF071;
+    background-image: url(/assets/image/BG-Portada.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
@@ -17,9 +17,7 @@ h1{
     text-align: center;
 }
 
-#menu{
-    display: flexbox;
-}
+
 
 a{
     border-radius: 50px;
@@ -29,7 +27,6 @@ a{
     color: #fff;
     background-color: #289E42;
     opacity: 90%;
-
     
   }
 
@@ -37,4 +34,8 @@ a{
       color: black;
       text-align: center;
   }
-
+  li{
+    list-style: none;
+    display: block;
+    margin: 20px;  
+}
