@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/d4ed587f4f.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
-<body>
+<body >
     
-                <Header>
-                    <div class="logo">
-                        <img src="" alt="Logo">
+                <Header >
+                    <div class="containerLogo">
+                        <img src="/assets/image/logo.jpg" class="logo" alt="Logo">
                     </div>
 
                     <nav>
                                 <ul>
-                                        <li>
-                                             <a href="/index.html">Inicio</a> 
-                                        </li>
+                                       
                                         <li><a href="/sobreMi.html"> Sobre Mi</a>
 
                                         </li>
@@ -29,34 +28,51 @@
                                         <li>
                                            <a href="/misTrabajos.html">  Mis trabajos</a>
                                         </li>
+
+                                        <li class>
+                                            <a href="/contacto.html">Contacto</a> 
+                                       </li>
+
+                                        <li class>
+                                            <a href="/index.html">Inicio</a> 
+                                       </li>
                                 </ul>
                     </nav>
 
                 </Header>
 
-                <section class="container">
-                        <div>
 
-                               <form action="">
-                                   <label for="check">nombre:</label>
-                                   <input type="checkbox" name="check" id="check">
+                    <div class="contactoContainer">
+                           <form action="">
                                         <input type="text" name="nombre" placeholder="Nombre" required>
                                         <input type="text" name="mail" placeholder="Mail" required>
                                         <input type="text" name="tel" placeholder="Teléfono">     
                                         <textarea name="" id="" name="msj" cols="30" rows="10" placeholder="Deje su mensaje aquí"></textarea>    
                                         <input type="button" value="enviar">                   
-                               </form>
-
-                        </div>
+                           </form>
+                       
                         
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                </section>
+                        <section class="socialMedia">
+                        
+                        <a href="#">    
+                                    <i class="fa-brands fa-facebook iconsocial"></i>
+                        </a>
 
-                <footer>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram-square iconsocial"></i>
+                        </a>
+                            
+                        <a href="#">
+                               <i class="fa-brands fa-twitter iconsocial"></i>
+                        </a> 
 
-                </footer>
+                        </section>
+
+                    </div>
+
+             
+
+                
 
 </body>
 </html>

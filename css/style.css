@@ -1,56 +1,122 @@
 *{
- margin: 0;
- padding: 0;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   
+   body{
+       background-color: rgb(181, 180, 180);
+       background-repeat: no-repeat;
+       background-position: right;
+       width: 100%;
+       height: 100vh;
+   }
 
+   .containerLogo{
+       width: 5%;
+       display: inline-block;
+        height: 93px;
+   }
 
-body{
-    background-image: url(/assets/image/portada2.jpg);
-    background-repeat: no-repeat ;
-    background-position: right;
-    background-size: 55%;
-    width: 100%;
-    height: 100vh;
+   .logo{
+       width: 100%;
+       border-radius: 10px;
+       max-width: 100%;
+       min-width: 100%;
+       min-height: 100%;
+       max-height: 100%;
+   }
+
+   nav{
+       display: inline-block;
+       float: right;
+   }
+   a{
+       text-decoration: none;
+   }
+
+li{
+    list-style: none;
+    display: inline;
+    float: right;
+    margin: 0 10px;
 }
 
 header{
-    width: 40%;
-    text-align: center;
-}
-
-h1{
-    color: #EEF071;
-    font-size: 60px;
-    font-family: "lobster";
-    padding-top: 15%    ;
-    margin-bottom: 15%;
-}
-
-p{
-    justify-content: center;
-    font-size: 28px;
-}
-
-a{
-
-    border-radius: 50px;
-    padding: 10px 90px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
     background-color: #289E42;
-    opacity: 90%;
-    
+    height: 10%;
+}
+
+
+
+form {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #texto{
-      color: black;
-      text-align: center;
+  
+
+  
+  form input[type="button"] {
+    padding: 0.5em 1em;
+    width: 10%;
+    border: none;
+    cursor: pointer;
   }
 
-  ul{
-      width: 40%;
-  }
+input[type=text]{
+    height: 3em;
+}
+
+input[type=text] , textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 45%;
+    margin:10px 0;
+    border-radius: 10px;
+    border: 1px; 
+}
+
+textarea{
+    resize: none;
+}
+
+.socialMedia{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.iconsocial{
+    margin:  0 30px;
+}
+
+#foto-SobreMi{
+    margin-top: 10%;
+    margin-left: 3%;
+    width: 25%;
+    height: 60%;
+}
+
+#texto-sobremi{
+    display: inline;
+}
 
 
 
+.diseño{
+    width: 150px;
+    height: 150px;
 
+}
+
+.marca{
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,53 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+body{
+    background-image: url(/assets/image/portada2.jpg);
+    background-repeat: no-repeat ;
+    background-position: right;
+    background-size: 55%;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 40%;
+    text-align: center;
+}
+
+h1{
+    color: #EEF071;
+    font-size: 60px;
+    font-family: "lobster";
+    padding-top: 15%    ;
+    margin-bottom: 15%;
+}
+
+p{
+    justify-content: center;
+    font-size: 28px;
+}
+
+a{
+
+    border-radius: 50px;
+    padding: 10px 90px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #289E42;
+    opacity: 90%;
+    
+  }
+  #texto{
+      color: black;
+      text-align: center;
+  }
+
+  ul{
+      width: 40%;
+  }
+
