@@ -1,6 +1,7 @@
 *{
  margin: 0;
  padding: 0;
+ box-sizing: border-box;
 }
 
 
@@ -34,7 +35,7 @@ p{
 a{
 
     border-radius: 50px;
-    padding: 10px 90px;
+    padding: 20px 90px;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -48,6 +49,19 @@ a{
   }
 
   ul{
+      
       width: 40%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: left;
+     align-items: flex-start;
+  }
+
+  li{
+      width: 45%;
+      margin-top: 70px;
+      list-style-type: none;
+      margin-left: 20px;
   }
 

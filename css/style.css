@@ -6,7 +6,7 @@
    
    
    body{
-       background-color: rgb(181, 180, 180);
+       background-color: rgb(228, 228, 228);
        background-repeat: no-repeat;
        background-position: right;
        width: 100%;
@@ -44,7 +44,7 @@ li{
 }
 
 header{
-    background-color: #289E42;
+    background-color: #cda4e7;
     height: 10%;
 }
 
@@ -75,6 +75,8 @@ input[type=text]{
 }
 
 input[type=text] , textarea{
+    color: white;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     width: 45%;
