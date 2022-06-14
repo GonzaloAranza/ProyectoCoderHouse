@@ -9,9 +9,6 @@ body{
     background-image: url(/assets/image/portada2.jpg);
     background-repeat: no-repeat ;
     background-position: right;
-    background-size: 55%;
-    width: 100%;
-    height: 100vh;
     padding: 50px;
 }
 
@@ -23,14 +20,16 @@ header{
 h1{
     color: #EEF071;
     font-size: 60px;
-    font-family: "lobster";
-    padding-top: 15%    ;
+    font-family: 'Sacramento', cursive;
+    padding-top: 15% ;
     margin-bottom: 15%;
 }
 
 p{
     justify-content: center;
     font-size: 28px;
+    font-family: 'lobster';
+    
 }
 
 a{
@@ -54,7 +53,7 @@ a{
   }
 
   li{
-      width: 45%;
+      width: 40%;
       margin-top: 70px;
       list-style-type: none;
       margin-left: 20px;
