@@ -9,46 +9,48 @@ body{
     background-image: url(/assets/image/portada2.jpg);
     background-repeat: no-repeat ;
     background-position: right;
-    padding: 50px;
+}
+
+.mainGrid{
+    width: 50%;
+    height: 100vh;
+    background-color: #c7e7ce;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    padding: 0 3%;
 }
 
 header{
-    width: 40%;
     text-align: center;
 }
 
 h1{
-    color: #EEF071;
+    color: #eff15e;
     font-size: 60px;
     font-family: 'Sacramento', cursive;
     padding-top: 15% ;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 p{
-    justify-content: center;
     font-size: 28px;
     font-family: 'lobster';
-    
 }
 
-a{
 
-    text-decoration: none;
-    
+
+a{
+    text-decoration: none;    
+    font-size: 20px;
   }
-  #texto{
-      color: black;
-      text-align: center;
-  }
+ 
 
   ul{
       
-      width: 40%;
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
-     justify-content: left;
+     justify-content: center;
      align-items: flex-start;
   }
 
@@ -56,7 +58,7 @@ a{
       width: 40%;
       margin-top: 70px;
       list-style-type: none;
-      margin-left: 20px;
+      margin: 5%;
 
       border-radius: 50px;
       padding: 20px 90px;
@@ -64,6 +66,6 @@ a{
   
       color: #fff;
       background-color: #289E42;
-      opacity: 90%;
+      opacity: 75%;
   }
 
