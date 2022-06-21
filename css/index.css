@@ -7,7 +7,7 @@
 
 body{
     background-image: url(/assets/image/portada2.jpg);
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-position: right;
 }
 
@@ -16,7 +16,7 @@ body{
     height: 100vh;
     background-color: #c7e7ce;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
     padding: 0 3%;
     place-items: center;
 }
@@ -74,26 +74,24 @@ a{
         body{
             background-image: url(/assets/image/portada2.jpg);
             background-size: cover;
-            
+            background-position: center ;
         }
+
 
         .mainGrid{
             background: none;
             width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            padding: 0 3%;
-            place-items: center;
         }
 
         header{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
         }
 
+
         h1{
-            padding: 0;
-            margin: 0;
+
             font-size: 30px;
         }
 
@@ -104,14 +102,14 @@ a{
 
 
         a{
-            font-size: 15px;
+            font-size: 18px;
         }
         
 
 
         li{
             width: 100%;
-
-        }           
+        }   
+                
 }
   
