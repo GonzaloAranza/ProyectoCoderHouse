@@ -33,10 +33,12 @@ html ,body{
         width: 30%;
     }
 
-    ul{
+    nav ul{
         display: flex;  
         flex-direction: row-reverse;
         justify-content: space-between;    
+        margin-bottom: 0;
+        padding-left: 0;
     }
  
     li{
@@ -175,16 +177,78 @@ input[type=text] , textarea{
 
 
 
+
+
+
+/*aca empieza SobreMi.html*/
+
+.gridSobreMi{
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: 33% 33% 33% ;
+    grid-template-areas: "imagen estudios"
+                                        "imagen habilidades"
+                                        "imagen  comoSoy";
+
+    gap: 2%;
+}
+
+
+
+.divImagenSobreMi{
+    grid-area: imagen;
+}
+
+.imagenSobreMi{
+    width: 100%;
+}
+
+
+  .estudios {
+    grid-area: estudios;
+}
+
+.habilidades {
+    grid-area: habilidades;
+}
+ .acercaDeMi {
+    grid-area: comoSoy;
+}
+
+div ul li {
+    font-size: 20px;
+}
+
+div p, div h3{
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.trabajosGrid{
+    display: grid;
+            grid-template-columns: 15% 85%;
+            grid-template-rows: repeat(5,20%);
+
+            gap: 50px;
+}
+
+
+
+                           
 .diseño{
     width: 150px;
     height: 150px;
 
 }
+        
 
-.marca{
-    width: 200px;
-    height: 200px;
+.gridMarcas{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: 100% 100%;
+        justify-content:space-around;
 }
+
 
 
 @media (max-width: 320px) {
@@ -197,8 +261,9 @@ input[type=text] , textarea{
                 padding: 0;            
             }
             nav{
-                width: 100%;
+                width: 100%;               ;
             }
+
             
             nav ul li a{
                 font-size: 14px;
@@ -212,4 +277,55 @@ input[type=text] , textarea{
             input[type=text] , textarea{   
                 width: 100%;
             }
+
+            .gridSobreMi{
+                display: grid;
+                grid-template-rows: 25% 25% 25% 25% ;
+
+                grid-template-areas: "imagen imagen "
+                                                    "estudios estudios  "
+                                                    "habilidades habilidades"
+                                                    "comoSoy comoSoy" ;
+
+                
+            }
+
+            
+.divImagenSobreMi{
+    grid-area: imagen;
+
+}
+
+.imagenSobreMi{
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.estudios {
+    grid-area: estudios;
+}
+
+.habilidades {
+    grid-area: habilidades;
+    display: flex;
+    flex-direction: column;
+    
+}
+ .acercaDeMi {
+    grid-area: comoSoy;
+}
+
+.trabajosGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gridMarcas{
+    display: flex;
+    flex-direction: column;
+}
+
+            
 }
