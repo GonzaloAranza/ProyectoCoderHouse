@@ -11,6 +11,8 @@ body{
     background-position: right;
 }
 
+
+/*
 .mainGrid{
     width: 50%;
     height: 100vh;
@@ -20,7 +22,7 @@ body{
     padding: 0 3%;
     place-items: center;
 }
-
+*/
 header{
     text-align: center;
 }
@@ -46,14 +48,14 @@ a{
   }
  
 
-  ul{
+  /*ul{
       
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      align-items: flex-start;
   }
-
+*/
   li{
       width: 40%;
       margin-top: 70px;

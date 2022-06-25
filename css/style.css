@@ -13,7 +13,7 @@ html ,body{
        width: 100%;
    }
 
-
+/*
    header{
     background-color: #cda4e7;
     height: 10%;
@@ -22,7 +22,7 @@ html ,body{
     justify-content: space-between;
     align-items: center;
 }
-
+*/
 
    .logo{
     height: 95px;
@@ -32,7 +32,7 @@ html ,body{
     nav{
         width: 30%;
     }
-
+/*
     nav ul{
         display: flex;  
         flex-direction: row-reverse;
@@ -40,7 +40,7 @@ html ,body{
         margin-bottom: 0;
         padding-left: 0;
     }
- 
+ */
     li{
         list-style: none;
     }
@@ -128,8 +128,8 @@ input[type=text] , textarea{
     content:'' ;
     border: 0.2rem solid #fff;
     border-radius: 30%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     left: 0;
     right: 0;
     position: absolute;
@@ -140,8 +140,8 @@ input[type=text] , textarea{
 
 .igLogo:after{
      content:'' ;
-     border: 0.2rem solid #fff;
-     border-radius: 100%;
+     border: 0.3rem solid #fff;
+     border-radius: 90%;
      width: 0.5rem;
      height: 0.5rem;
      left: 0;
@@ -158,8 +158,8 @@ input[type=text] , textarea{
  border-radius: 100%;
  width: 0;
  height: 0;
- top: 0.5rem;
- right: 0.6rem;
+ top: 0.7rem;
+ right: 0.7rem;
  position: absolute;
  margin: auto;
 }
