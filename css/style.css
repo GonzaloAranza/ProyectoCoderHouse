@@ -33,7 +33,7 @@ html ,body{
 
 
    .indexBody{
-    background-image: url(/assets/image/portada2.jpg);
+    background-image: url(./assets/image/portada2.jpg);
     background-repeat: no-repeat;
     background-position: right;
 }
