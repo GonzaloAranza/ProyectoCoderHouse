@@ -24,18 +24,19 @@
 }
    
    
-html ,body{
-       background-color: rgb(228, 228, 228);
-       height: 100%;
-       width: 100%;
+html,body{
+       min-height: 100vh;
    }
 
 
 
    .indexBody{
-    background-image: url(../assets/image/portada2.jpg);
+    background-image: url(../assets/image/portada2.2.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    min-height: 100vh;
+    min-width: 100vw;
+
 }
 
 /*
@@ -467,4 +468,54 @@ div p, div h3{
 }
 
             
+}
+
+
+@media (min-width: 321px) and ( max-width: 768px) {
+
+            .indexp{
+                color: white;
+                font-size: 1rem;
+            }
+
+            .indexBody{
+                background-image: url(../assets/image/portada2.jpg);
+                background-size: cover;
+            }
+
+
+.indexa{
+    text-decoration: none;    
+    font-size: 1rem;
+    font-weight: 600;
+  }
+ 
+
+
+.indexli{
+     height: 3rem;
+
+  }
+}
+
+@media (max-width:992px){
+    .indexBody{
+        background-image: url(../assets/image/portada2.jpg);
+        background-size: cover;
+    }
+
+    .indexp{
+        color: white;
+    }
+}
+
+@media (max-width:1400px){
+    .indexBody{
+        background-image: url(../assets/image/portada2.jpg);
+        background-size: cover;
+    }
+
+    .indexp{
+        color: white;
+    }
 }
