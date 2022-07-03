@@ -1,42 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    resize: none;
-
-   }
-
-   .navbar ul{
-    width: 100%;
-   }
-   
-   .p-m-0{
-    margin: 0;
-    padding: 0;
-   }
-
-   .alignCenter{
-    text-align: center;
-   }
-
-   li{
-    list-style: none;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  resize: none;
 }
-   
-   
-html,body{
-       min-height: 100vh;
-   }
 
+.navbar ul {
+  width: 100%;
+}
 
+.p-m-0 {
+  margin: 0;
+  padding: 0;
+}
 
-   .indexBody{
-    background-image: url(../assets/image/portada2.2.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    min-height: 100vh;
-    min-width: 100vw;
+.alignCenter {
+  text-align: center;
+}
 
+li {
+  list-style: none;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+.indexBody {
+  background-image: url(../assets/image/portada2.2.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /*
@@ -50,61 +46,57 @@ html,body{
     place-items: center;
 }
 */
-.Indexheader{
-    text-align: center;
-    width: 100%;
+.Indexheader {
+  text-align: center;
+  width: 100%;
 }
 
-.indexh1{
-    color: #eff15e;
-    font-size: 4rem;
-    font-family: 'Sacramento', cursive;
-    padding-top: 15% ;
-    margin-bottom: 10%;
-    text-align: center;
+.indexh1 {
+  color: #eff15e;
+  font-size: 4rem;
+  font-family: "Sacramento", cursive;
+  padding-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
-.indexp{
-    font-size: 1.7rem;
-    font-family: 'lobster';
+.indexp {
+  font-size: 1.7rem;
+  font-family: "lobster";
 }
 
-.indexnav{
-    width: 100%;
-    display: flex;
+.indexnav {
+  width: 100%;
+  display: flex;
 }
 
-.indexa{
-    text-decoration: none;    
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
- 
+.indexa {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
-  /*ul{
-      
+/*ul{
+
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      align-items: flex-start;
   }
 */
-.indexli{
-      width: 40%;
-      height: 4rem;
-      margin-top: 70px;
-      list-style-type: none;
-      margin: 5%;
-
-      padding-top:0.7rem;
-      border-radius: 50px;
-      text-align: center;
-  
-      color: #fff;
-      background-color: #289E42;
-      opacity: 75%;
-  }
-
+.indexli {
+  width: 40%;
+  height: 4rem;
+  margin-top: 70px;
+  list-style-type: none;
+  margin: 5%;
+  padding-top: 0.7rem;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #289E42;
+  opacity: 75%;
+}
 
 /*
    header{
@@ -116,12 +108,10 @@ html,body{
     align-items: center;
 }
 */
-
-   .logo{
-    height: 95px;
-    border-radius: 200px;
-    }
-
+.logo {
+  height: 95px;
+  border-radius: 200px;
+}
 
 /*
     nav ul{
@@ -132,390 +122,366 @@ html,body{
         padding-left: 0;
     }
  */
-    .navbar{
-        width: 50%;
-    }
-
-   .navbar ul li a{
-       text-decoration: none;
-       transition: all .5s ease;
-       font-weight: 5;
-       font-size: 18px;
-   }
-   .navbar ul li a:hover{
-    color: #000;
-    background-color: #c590e5;
-    border-radius: 10px;  
+.navbar {
+  width: 50%;
 }
 
-.navbar li{
-    padding: 0 1%;
+.navbar ul li a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-weight: 5;
+  font-size: 18px;
 }
 
-.gridContacto{
-    display: grid;
-    grid-template-rows: 2fr 2fr;
+.navbar ul li a:hover {
+  color: #000;
+  background-color: #c590e5;
+  border-radius: 10px;
+}
+
+.navbar li {
+  padding: 0 1%;
+}
+
+.gridContacto {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
 }
 
 form {
-
-    width: 100%;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-
-  
-  form input[type="button"] {
-    padding: 0.5em 1em;
-    width: 10%;
-    border: none;
-    cursor: pointer;
-  }
-
-input[type=text] ,input[type=tel],input[type=email]{
-    height: 3em;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input[type=text] ,input[type=tel],input[type=email], textarea{
-    color: white;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 45%;
-    margin:10px 0;
-    border-radius: 10px;
-    border: 0px;
+form input[type=button] {
+  padding: 0.5em 1em;
+  width: 10%;
+  border: none;
+  cursor: pointer;
 }
 
-
-
-.socialMedia{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+input[type=text], input[type=tel], input[type=email] {
+  height: 3em;
 }
 
-.iconSocial{
-    margin:  0 10px;
-    height: 2.5rem;
-    width: 2.5rem;
+input[type=text], input[type=tel], input[type=email], textarea {
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 45%;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 0px;
 }
 
-
-
-.igLogo{
-    height: 2.5rem;
-    width: 2.5rem;
-    background: radial-gradient(
-        circle at 33% 100%,
-        #fed373 4%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf);
-        border-radius: 30%;
-        position: relative;
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-
-.igLogo:before{
-    content:'' ;
-    border: 0.2rem solid #fff;
-    border-radius: 30%;
-    width: 1.7rem;
-    height: 1.7rem;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
+.iconSocial {
+  margin: 0 10px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.igLogo:after{
-     content:'' ;
-     border: 0.3rem solid #fff;
-     border-radius: 90%;
-     width: 0.5rem;
-     height: 0.5rem;
-     left: 0;
-     right: 0;
-     position: absolute;
-     margin: auto;
-     top: 0;
-     bottom: 0;
+.igLogo {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  border-radius: 30%;
+  position: relative;
 }
 
-.igLogoSpan{
- content:'' ;
- border: 0.15rem solid #fff;
- border-radius: 100%;
- width: 0;
- height: 0;
- top: 0.7rem;
- right: 0.7rem;
- position: absolute;
- margin: auto;
+.igLogo:before {
+  content: "";
+  border: 0.2rem solid #fff;
+  border-radius: 30%;
+  width: 1.7rem;
+  height: 1.7rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
-#foto-SobreMi{
-    margin-top: 10%;
-    margin-left: 3%;
-    width: 25%;
-    height: 60%;
+.igLogo:after {
+  content: "";
+  border: 0.3rem solid #fff;
+  border-radius: 90%;
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
-#texto-sobremi{
-    display: inline;
+.igLogoSpan {
+  content: "";
+  border: 0.15rem solid #fff;
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+  top: 0.7rem;
+  right: 0.7rem;
+  position: absolute;
+  margin: auto;
 }
 
+#foto-SobreMi {
+  margin-top: 10%;
+  margin-left: 3%;
+  width: 25%;
+  height: 60%;
+}
 
-
-
-
+#texto-sobremi {
+  display: inline;
+}
 
 /*aca empieza SobreMi.html*/
-
-.gridSobreMi{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    grid-template-rows: 33% 33% 33% ;
-    grid-template-areas: "imagen estudios"
-                                        "imagen habilidades"
-                                        "imagen  comoSoy";
-
+.gridSobreMi {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "imagen estudios" "imagen habilidades" "imagen  comoSoy";
 }
 
-
-
-.divImagenSobreMi{
-    grid-area: imagen;
+.divImagenSobreMi {
+  grid-area: imagen;
 }
 
-.imagenSobreMi{
-    width: 100%;
-}
-
-
-  .estudios {
-    grid-area: estudios;
-}
-
-.habilidades {
-    grid-area: habilidades;
-}
- .acercaDeMi {
-    grid-area: comoSoy;
-}
-
-div ul li {
-    font-size: 20px;
-}
-
-div p, div h3{
-    margin: 10px 0;
-    font-size: 22px;
-}
-
-.trabajosGrid{
-    display: grid;
-            grid-template-columns: 10% 75%;
-            grid-template-rows: repeat(5,20%);
-            padding-left: 20px;
-            gap: 50px;
-}
-
-
-
-                           
-.diseño{
-    width: 150px;
-    height: 150px;
-
-}
-        
-
-.gridMarcas{
-    display: grid;
-    grid-template-columns: repeat(4,20%);
-    grid-template-rows: 100% 100%;
-        justify-content:space-around;
-}
-
-
-
-@media (max-width: 320px) {
-
-    .p-m-0{
-        padding: 0;
-        margin: 0;
-    }
-
-    .indexBody{
-        background-image: url(/assets/image/portada2.jpg);
-        background-size: cover;
-        background-position: center ;
-    }
-
-    .indexh1{
-        font-size: 30px;
-    }
-
-
-
-   .indexheader{
-        width: 100%;          
-    }
-
-
-
-    .indexp{
-        font-size: 14px;
-        color: white;
-    }
-
-
-    .indexa{
-        font-size: 18px;
-    }
-    
-
-
-    .indexli{
-        width: 100%;
-        padding: 0;
-        height: 10%;
-    }   
-
-
-
-
-            header{
-                height: 10%;  
-                padding: 0;            
-            }
-            .navbar{
-                width: 100%;          
-           }
-
-           .logo{
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-            
-            .navbar ul li a{
-                font-size: 14px;
-                font-weight: 0;
-            }
-
-            form input[type="button"] {
-                width: 100%;
-            }
-
-            input[type=text], input[type=email],input[type=tel],textarea{   
-                width: 100%;
-            }
-
-            .gridSobreMi{
-                display: grid;
-                grid-template-rows: 25% 25% 25% 25% ;
-
-                grid-template-areas: "imagen imagen "
-                                                    "estudios estudios  "
-                                                    "habilidades habilidades"
-                                                    "comoSoy comoSoy" ;
-
-                
-            }
-
-            
-.divImagenSobreMi{
-    grid-area: imagen;
-
-}
-
-.imagenSobreMi{
-    height: 100%;
-    object-fit:scale-down;
+.imagenSobreMi {
+  width: 100%;
 }
 
 .estudios {
-    grid-area: estudios;
+  grid-area: estudios;
 }
 
 .habilidades {
+  grid-area: habilidades;
+}
+
+.acercaDeMi {
+  grid-area: comoSoy;
+}
+
+div ul li {
+  font-size: 20px;
+}
+
+div p, div h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.trabajosGrid {
+  display: grid;
+  grid-template-columns: 10% 75%;
+  grid-template-rows: repeat(5, 20%);
+  padding-left: 20px;
+  gap: 50px;
+}
+
+.diseño {
+  width: 150px;
+  height: 150px;
+}
+
+.gridMarcas {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 100% 100%;
+  justify-content: space-around;
+}
+
+@media (max-width: 320px) {
+  .p-m-0 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .indexBody {
+    background-image: url(/assets/image/portada2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .indexh1 {
+    font-size: 30px;
+  }
+
+  .indexheader {
+    width: 100%;
+  }
+
+  .indexp {
+    font-size: 14px;
+    color: white;
+  }
+
+  .indexa {
+    font-size: 18px;
+  }
+
+  .indexli {
+    width: 100%;
+    padding: 0;
+    height: 10%;
+  }
+
+  header {
+    height: 10%;
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    font-weight: 0;
+  }
+
+  form input[type=button] {
+    width: 100%;
+  }
+
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+  }
+
+  .gridSobreMi {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "imagen imagen " "estudios estudios  " "habilidades habilidades" "comoSoy comoSoy";
+  }
+
+  .divImagenSobreMi {
+    grid-area: imagen;
+  }
+
+  .imagenSobreMi {
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .estudios {
+    grid-area: estudios;
+  }
+
+  .habilidades {
     grid-area: habilidades;
     display: flex;
     flex-direction: column;
-    
-}
- .acercaDeMi {
-    grid-area: comoSoy;
-}
+  }
 
-.trabajosGrid{
+  .acercaDeMi {
+    grid-area: comoSoy;
+  }
+
+  .trabajosGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-}
-
-.gridMarcas{
+  .gridMarcas {
     display: flex;
     flex-direction: column;
+  }
 }
+@media (min-width: 321px) and (max-width: 768px) {
+  .indexp {
+    color: white;
+    font-size: 1rem;
+  }
 
-            
-}
+  .indexBody {
+    background-image: url(../assets/image/portada2.jpg);
+    background-size: cover;
+  }
 
-
-@media (min-width: 321px) and ( max-width: 768px) {
-
-            .indexp{
-                color: white;
-                font-size: 1rem;
-            }
-
-            .indexBody{
-                background-image: url(../assets/image/portada2.jpg);
-                background-size: cover;
-            }
-
-
-.indexa{
-    text-decoration: none;    
+  .indexa {
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
   }
- 
 
-
-.indexli{
-     height: 3rem;
-
+  .indexli {
+    height: 3rem;
   }
 }
+@media (max-width: 992px) {
+  .indexBody {
+    background-image: url(../assets/image/portada2.jpg);
+    background-size: cover;
+  }
 
-@media (max-width:992px){
-    .indexBody{
-        background-image: url(../assets/image/portada2.jpg);
-        background-size: cover;
-    }
-
-    .indexp{
-        color: white;
-    }
+  .indexp {
+    color: white;
+  }
 }
+@media (max-width: 1400px) {
+  .indexBody {
+    background-image: url(../assets/image/portada2.jpg);
+    background-size: cover;
+  }
 
-@media (max-width:1400px){
-    .indexBody{
-        background-image: url(../assets/image/portada2.jpg);
-        background-size: cover;
-    }
-
-    .indexp{
-        color: white;
-    }
+  .indexp {
+    color: white;
+  }
 }
+@media (min-width: 1400px) {
+  .mainContainer {
+    width: 46%;
+  }
+
+  .indexBody {
+    background-image: url(../assets/image/portada2.2.jpg);
+  }
+}
+@media (min-width: 1600px) {
+  .mainContainer {
+    width: 50%;
+  }
+
+  .indexBody {
+    background-image: url(../assets/image/portada2.2.jpg);
+  }
+}
+@media (min-width: 1700px) {
+  .mainContainer {
+    width: 55%;
+  }
+
+  .indexBody {
+    background-image: url(../assets/image/portada2.2.jpg);
+  }
+}
+@media (min-width: 1800px) {
+  .mainContainer {
+    width: 59%;
+  }
+
+  .indexBody {
+    background-image: url(../assets/image/portada2.2.jpg);
+  }
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
