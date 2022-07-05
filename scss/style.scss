@@ -1,9 +1,15 @@
+@import "colors";
+
+
+
+
 .logo  {
 	height: 95px ;
 	border-radius: 200px; 
 }
 
-
+header{
+	background-color:$colorNavbar;
 .navbar {
 	width: 50% ;
 	ul {
@@ -17,7 +23,7 @@
 				font-size: 18px ;
 				&:hover {
 					color: #000 ;
-					background-color: #c590e5 ;
+					background-color: $colorHover ;
 					border-radius: 10px ;
                 }
             }
@@ -26,6 +32,7 @@
 	li{ 
 		padding: 0 1% ;
     }
+}
 }
 
 .gridContacto {
