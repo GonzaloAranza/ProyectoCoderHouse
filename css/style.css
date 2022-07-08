@@ -6,6 +6,10 @@
   resize: none;
 }
 
+.white{
+  color: white;
+}
+
 .navbar ul {
   width: 100%;
 }
@@ -15,9 +19,10 @@
   padding: 0;
 }
 
-section .alignCenter {
+.alignCenter {
   text-align: center;
 }
+
 
 li {
   list-style: none;
@@ -156,11 +161,12 @@ form {
   align-items: center;
 }
 
-form input[type=button] {
+form input[type=submit] {
   padding: 0.5em 1em;
   width: 10%;
-  border: none;
+  border-radius: 10px;
   cursor: pointer;
+
 }
 
 input[type=text], input[type=tel], input[type=email] {
@@ -237,12 +243,6 @@ input[type=text], input[type=tel], input[type=email], textarea {
   margin: auto;
 }
 
-#foto-SobreMi {
-  margin-top: 10%;
-  margin-left: 3%;
-  width: 25%;
-  height: 60%;
-}
 
 #texto-sobremi {
   display: inline;
@@ -253,27 +253,36 @@ input[type=text], input[type=tel], input[type=email], textarea {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 33% 33% 33%;
-  grid-template-areas: "imagen estudios" "imagen habilidades" "imagen  comoSoy";
+  grid-template-areas: "imagen estudios"
+                                       "imagen habilidades"  
+                                      "imagen  comoSoy";
 }
 
 .divImagenSobreMi {
   grid-area: imagen;
+  width: 100%;
 }
+
+
 
 .imagenSobreMi {
   width: 100%;
+  height: 100%;
 }
 
 .estudios {
   grid-area: estudios;
+  text-align: center;
 }
 
 .habilidades {
   grid-area: habilidades;
+  text-align: center;
 }
 
 .acercaDeMi {
   grid-area: comoSoy;
+  text-align: center;
 }
 
 div ul li {
@@ -285,18 +294,46 @@ div p, div h3 {
   font-size: 22px;
 }
 
-.trabajosGrid {
-  display: grid;
-  grid-template-columns: 10% 75%;
-  grid-template-rows: repeat(5, 20%);
-  padding-left: 20px;
-  gap: 50px;
+.contenedorTituloTrabajos{
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/image/imagentrabajo.jpg);
+
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
 }
 
-.diseño {
-  width: 150px;
-  height: 150px;
+.imagenTrabajo{
+  width: 90%;
 }
+
+.tarjetaTrabajo{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas: "imagen titulo"
+                                      "imagen descripcion";
+ 
+}
+
+.contenedorImagenTrabajo{
+  grid-area: imagen;
+}
+
+.tarjetaTrabajo>h3{
+  grid-area: titulo
+}
+
+
+.descripcionTarjetaTrabajo{
+  grid-area: descripcion;
+}
+
 
 .gridMarcas {
   display: grid;
@@ -359,54 +396,20 @@ div p, div h3 {
     font-weight: 0;
   }
 
-  form input[type=button] {
+  form input[type=submit] {
+
     width: 100%;
+
+  
   }
 
   input[type=text], input[type=email], input[type=tel], textarea {
     width: 100%;
   }
 
-  .gridSobreMi {
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: "imagen imagen " "estudios estudios  " "habilidades habilidades" "comoSoy comoSoy";
-  }
 
-  .divImagenSobreMi {
-    grid-area: imagen;
-  }
-
-  .imagenSobreMi {
-    height: 100%;
-    object-fit: scale-down;
-  }
-
-  .estudios {
-    grid-area: estudios;
-  }
-
-  .habilidades {
-    grid-area: habilidades;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .acercaDeMi {
-    grid-area: comoSoy;
-  }
-
-  .trabajosGrid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gridMarcas {
-    display: flex;
-    flex-direction: column;
-  }
 }
+
 @media (min-width: 321px) and (max-width: 768px) {
   .indexp {
     color: white;
@@ -426,16 +429,83 @@ div p, div h3 {
 
   .indexli {
     height: 3rem;
+
+  }
+  .indexp {
+    color: white;
+  }
+
+  header {
+    height: 10%;
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    font-weight: 0;
+  }
+
+  form input[type=submit] {
+    width: 200px;
+  }
+
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+  }
+
+  .gridSobreMi {
+    background-image: url(../assets/image/otramas.jpg);
+  }
+
+  .divImagenSobreMi{
+    display: block;
   }
 }
+
+
+
 @media (max-width: 992px) {
   .indexBody {
-    background-image: url(../assets/image/portada2.jpg);
+    background-image: url(../assets/image/raiders.png);
+    background-size: cover;
+  }
+  form input[type=submit] {
+    width: 107px;  
+  }
+
+  .divImagenSobreMi{
+    display: none;
+  }
+
+  .gridSobreMi {
+    display: flex;
+    height: 850px;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-image: url(../assets/image/sobreMi2.jpg);
     background-size: cover;
   }
 
-  .indexp {
+
+  
+  .habilidades{
     color: white;
+  }
+  .estudios{
+    color: #9b36b7;
+  }
+  .acercaDeMi{
+    color: #289E42;
   }
 }
 @media (max-width: 1400px) {
@@ -447,6 +517,15 @@ div p, div h3 {
   .indexp {
     color: white;
   }
+
+    
+.gridSobreMi {
+  grid-template-rows: 30% 41% 28%;
+  grid-template-columns: 35% 65%;
+}
+
+
+
 }
 @media (min-width: 1400px) {
   .mainContainer {
@@ -456,6 +535,8 @@ div p, div h3 {
   .indexBody {
     background-image: url(../assets/image/portada2.2.jpg);
   }
+
+
 }
 @media (min-width: 1600px) {
   .mainContainer {

@@ -4,7 +4,8 @@
 }
 
 header {
-  background-color: #c590e5;
+  background-color: #c590e5; 
+
 }
 header .navbar {
   width: 50%;
@@ -14,6 +15,7 @@ header .navbar ul {
 }
 header .navbar ul li {
   list-style: none;
+  margin: 0 10px;
 }
 header .navbar ul li a {
   text-decoration: none;
@@ -26,7 +28,7 @@ header .navbar ul li a:hover {
   background-color: red;
   border-radius: 10px;
 }
-header .navbar li {
+header .navbar2 li {
   padding: 0 1%;
 }
 
