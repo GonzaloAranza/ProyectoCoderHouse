@@ -1,8 +1,32 @@
 @import "colors";
+.inputs{
+	color: white;
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 45%;
+	margin: 10px 0;
+	border-radius: 10px;
+	border: 0px;
+}
 
 
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
+@mixin breakpoint($size) {
+	@if map-has-key($breakpoints, $size) {
+	  @media (max-width: #{map-get($breakpoints, $size)}) {
+		@content;
+		  }
+	  }
+  }
 
+ 
 .logo  {
 	height: 95px ;
 	border-radius: 200px; 
@@ -63,14 +87,13 @@ input[type=text], input[type=tel], input[type=email] {
 	height: 3em ;
 }
 
-input[type=text], input[type=tel], input[type=email], textarea {
-	color: white ;
-	background-color: black ;
-	font-family: Arial, Helvetica, sans-serif ;
-	width: 45% ;
-	margin: 10px 0 ;
-	border-radius: 10px ;
-	border: 0px ;
+input[type=text], input[type=tel], input[type=email] {
+@extend .inputs;
+}
+
+textarea{
+	@extend .inputs;
+	resize: none;
 }
 
 .socialMedia {
@@ -127,3 +150,84 @@ input[type=text], input[type=tel], input[type=email], textarea {
 	position: absolute ;
 	margin: auto ;
 }
+
+
+@include breakpoint(xs){
+	header {
+	  height: 10%; 
+	  padding: 0;
+	   
+  
+		  .navbar {
+			  width: 100% ;
+			  ul {
+				  li {
+					  a {
+						  font-size: 14px ;
+						  font-weight: 0 ;
+					  }
+				  }
+			  }
+		  }
+	  }
+  .logo {
+	  width: 2.5rem ;
+	  height: 2.5rem ;
+  }
+	  form {
+			  input[type=submit] {
+				  width: 100% 
+			  }
+		  input[type=text], input[type=email], input[type=tel], textarea {
+			  width: 100% 
+			  }
+	  }
+  }
+
+@include breakpoint(md){
+
+	header {
+			height: 10% ;
+			padding: 0 ;
+			.navbar {
+				width: 100%;
+				ul {
+					li {
+						a {
+				font-size: 14 px ;
+				font-weight: 0 ;
+						}
+					}
+				}
+			}
+	} 
+
+.logo {
+	width: 2.5rem ;
+	height: 2.5rem ;
+}
+
+form {
+			input[type=submit] {
+				width: 200px 
+			}
+		input[type=text], input[type=email], input[type=tel], textarea {
+			width: 100% 
+			}
+	}
+
+}
+
+
+@include breakpoint(lg){
+
+
+	form input[type=submit] {
+	  width: 107px;  
+	}  
+	
+
+}
+
+
+
