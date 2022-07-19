@@ -6,6 +6,10 @@
   resize: none;
 }
 
+.alto-50{
+  height: 540px;
+}
+
 .white{
   color: white;
 }
