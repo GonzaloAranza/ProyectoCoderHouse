@@ -320,6 +320,7 @@ div p, div h3 {
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 15% 85%;
+  gap: 30px;
   grid-template-areas: "imagen titulo"
                                       "imagen descripcion";
 
@@ -580,10 +581,10 @@ ul.slider li:target {
     color: white;
   }
   .estudios{
-    color: #9b36b7;
+    color: white;
   }
   .acercaDeMi{
-    color: #289E42;
+    color: white;
   }
 }
 @media (max-width: 1400px) {

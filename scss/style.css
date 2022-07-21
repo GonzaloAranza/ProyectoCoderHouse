@@ -42,7 +42,7 @@ header .navbar li {
 
 .gridContacto {
   display: grid;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 2fr auto;
 }
 
 section .alignCenter {
