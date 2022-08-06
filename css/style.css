@@ -144,7 +144,7 @@ html, body {
 
 .navbar ul li a:hover {
   color: #000;
-  background-color: #c590e5;
+  background-color: white;
   border-radius: 10px;
   font-weight: 400;
 }
@@ -180,7 +180,7 @@ input[type=text], input[type=tel], input[type=email] {
 
 input[type=text], input[type=tel], input[type=email], textarea {
   color: white;
-  background-color: black;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   width: 45%;
   margin: 10px 0;
