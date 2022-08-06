@@ -426,6 +426,17 @@ ul.slider li:target {
   border-radius: 100%;
 }
 
+.carouselset{
+  
+}
+
+.objetfit{
+  width: 1920px;
+  height: 800px;
+
+}
+
+
 
 @media (max-width: 320px) {
   .p-m-0 {
